@@ -4,6 +4,10 @@
 .signinBtn {
   text-decoration: none;
 }
+.signupBtn{
+  text-decoration: none;
+  margin-right: 10px;
+}
 /* ------------------------ */
 .banner {
   width: 100%;
