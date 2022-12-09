@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import { noteContext } from "../App";
+import { signContext } from "../App";
 import "./Signup.css";
 
 function SignupPage() {
-  let data1 = useContext(noteContext);
+  let data1 = useContext(signContext);
   // UseState for holding values
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
