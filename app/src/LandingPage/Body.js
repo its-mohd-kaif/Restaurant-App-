@@ -2,10 +2,13 @@ import React from "react";
 import img2 from "../banner.jpg";
 import img3 from "../disc1.png";
 import img4 from "../disc2.png";
+import TransitionsModal from "./Popup";
 
 function Body() {
   return (
     <div>
+      {/* Import Model */}
+      <TransitionsModal />
       <div className="bannerDiv">
         <img className="banner" src={img2} alt="banner" />
       </div>

@@ -1,35 +1,52 @@
+/* Navigation Bar  */
+.navbar-brand {
+  font-size: 23px;
+  font-weight: bold;
+}
+
 .logo {
   width: 3em;
 }
+
+.signupBtn,
 .signinBtn {
-  text-decoration: none;
+  padding: 5px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-.signupBtn{
-  text-decoration: none;
-  margin-right: 10px;
-}
-/* ------------------------ */
+
+/* Main Container */
+
 .banner {
   width: 100%;
 }
-.bannerDiv{
-    margin-top: 1%;
-    margin-bottom: 1%;
+
+.bannerDiv {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
-.rowBody{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-left: 10%;
+
+.rowBody {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
 }
+
 .discountImg {
-    width: 100%;
-    margin-top: 2%;
-  }
-.bodyHead{
-    text-align: center;
+  width: 100%;
+  margin-top: 2%;
 }
-/* ---------------------------- */
-.footerDiv{
-    background-color: black;
+
+.bodyHead {
+  text-align: center;
+}
+/* -----------Footer--------------- */
+
+.footerDiv {
+  background-color: black;
 }

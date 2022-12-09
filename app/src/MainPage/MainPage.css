@@ -1,43 +1,51 @@
-.searchMainDin{
-    background: url("../food.png");
-    height: 20em;
-    color: white;
+.searchMainDin {
+  background: url("../food.png");
+  height: 20em;
+  color: white;
 }
-.searchInput{
-    width: 40%;
-    height: 3em;
-    padding: 1%;
-    font-size: large;
-}
-.searchBtn{
-    padding: 12px 20px;
-    font-size: large;
-    background-color: red;
-    color: white;
-    border: none;
-    margin-left: 1%;
-}
-.imageRes{
-    width: 200px;
-    height: 200px;
-}
-.resturantDiv{
-    width: 60%;
-    margin: 2%;
-    padding: 1%;
-    border-radius: 12px;
-    border: 1px solid rgb(170, 170, 170);
-}
-.viewBtn{
-    padding: 7px 15px;
-    background-color: black;
-    color: white;
-    border-radius: 12px;
-    border: none;
-    margin-top: 12%;
 
+.searchInput {
+  width: 40%;
+  height: 3em;
+  padding: 1%;
+  font-size: large;
+  border-radius: 12px;
 }
-.rowResCart{
-    display: flex;
-    justify-content: space-between;
+
+.searchBtn {
+  padding: 12px 20px;
+  font-size: large;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-left: 1%;
+  margin-top: 4%;
+  border-radius: 12px;
+}
+
+.imageRes {
+  width: 200px;
+  height: 200px;
+}
+
+.resturantDiv {
+  width: 60%;
+  margin: 2%;
+  padding: 1%;
+  border-radius: 12px;
+  border: 1px solid rgb(170, 170, 170);
+}
+
+.viewBtn {
+  padding: 7px 15px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  margin-top: 12%;
+}
+
+.rowResCart {
+  display: flex;
+  justify-content: space-between;
 }

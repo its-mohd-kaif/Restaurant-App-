@@ -5,13 +5,12 @@ import { noteContext } from "../App";
 import "./Signup.css";
 
 function SignupPage() {
-    let data1 = useContext(noteContext);
-    // UseState for holding values
+  let data1 = useContext(noteContext);
+  // UseState for holding values
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [pass, setPass] = useState("");
-
 
   let navigate = useNavigate();
 
@@ -41,8 +40,7 @@ function SignupPage() {
     // All validations
     let tempUsername = username;
     tempUsername = tempUsername.toLowerCase();
-    var mailformat =
-      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    var mailformat = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (name === "") {
       alert("Name Field Can Not be Empty");
       document.getElementById("name").focus();
@@ -67,7 +65,7 @@ function SignupPage() {
     } else if (pass.length <= 4) {
       alert("Password length must be greater then 4");
       document.getElementById("pass").focus();
-    }else {
+    } else {
       // Push obj into context
       alert("Account Created Successfully");
       data1.data.push(obj);
@@ -91,6 +89,7 @@ function SignupPage() {
           <div className="inputContainer">
             <input
               onChange={nameHandler}
+              autoFocus
               id="name"
               type="text"
               className="input"
@@ -140,7 +139,7 @@ function SignupPage() {
               Password
             </label>
           </div>
-          
+
           <input
             onClick={submitHandler}
             type="submit"
@@ -153,7 +152,7 @@ function SignupPage() {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default SignupPage
+export default SignupPage;

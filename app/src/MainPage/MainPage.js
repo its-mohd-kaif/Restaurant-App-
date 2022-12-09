@@ -4,21 +4,23 @@ import { Data } from "../test";
 import { detailContext, noteContext } from "../App";
 import { Link, useNavigate } from "react-router-dom";
 function MainPage() {
+  // UseState For Input Box
   const [input, setInput] = useState("");
-
+  // Import Usecontext
   const item = useContext(noteContext);
   const details = useContext(detailContext);
-
+  // Import UseNavigate
   let navigate = useNavigate();
-
+  // Input Handle Function
   const inputHandler = (e) => {
     setInput(e.target.value);
   };
 
-  const searchHandler = () => {
+  function searchData(params) {
     let tempArr = [];
     if (input === "") {
       alert("Type Something...");
+      document.getElementById("input").focus();
     } else {
       let tempInput = input.toLowerCase();
 
@@ -41,8 +43,20 @@ function MainPage() {
 
     item.setRestaurant(tempArr);
     setInput("");
+  }
+
+  // Search Handel Function
+  const searchHandler = () => {
+    searchData();
   };
 
+  const keyHandler = (e) => {
+    if (e.key === "Enter") {
+      searchData();
+    }
+  };
+
+  // View More Handler
   const viewMoreBtn = (value) => {
     let tempArr2 = [];
     tempArr2.push(value);
@@ -54,12 +68,13 @@ function MainPage() {
     <div>
       <center>
         <div className="searchMainDin">
-          <h1>Welcome to Yours Kitchen</h1>
           <input
+            id="input"
             autoFocus
             value={input}
             onChange={inputHandler}
             className="searchInput"
+            onKeyDown={keyHandler}
           />
           <button onClick={searchHandler} className="searchBtn">
             Search
@@ -67,8 +82,8 @@ function MainPage() {
         </div>
       </center>
       <center>
-        {item.restaurant.map((val) => (
-          <div className="resturantDiv">
+        {item.restaurant.map((val ,index) => (
+          <div key={index} className="resturantDiv">
             <div className="rowResCart">
               <div className="column1ResCart">
                 <div>

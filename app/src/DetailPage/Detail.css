@@ -1,3 +1,24 @@
-.detailImg{
-    width: 50%;
+.detailImg {
+  width: 90%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.backBtn {
+  padding: 10px 40px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 3%;
+  margin-top: 4%;
+  border-radius: 12px;
+}
+
+.detailContainer {
+  border: 1px solid black;
+  width: 50%;
+  padding: 1%;
+  border-radius: 12px;
 }

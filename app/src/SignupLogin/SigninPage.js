@@ -51,6 +51,7 @@ function SigninPage() {
           <div className="inputContainer">
             <input
               onChange={userHandler}
+              autoFocus
               id="username"
               type="text"
               className="input"

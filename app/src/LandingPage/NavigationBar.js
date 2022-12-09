@@ -3,18 +3,15 @@ import img1 from "../logo.png";
 import "./LandingPage.css";
 import { Link } from "react-router-dom";
 
-// import Container from 'react-bootstrap/Container';
-// import Navbar from 'react-bootstrap/Navbar';
-
 function NavigationBar() {
   return (
     <>
+      {/* Navbar Component */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Yours Kitchen
+            <span>Yours Kitchen</span>
           </a>
-          {/* <Link to="/">Yours Kitchen</Link> |{" "} */}
           <button
             className="navbar-toggler"
             type="button"
@@ -36,18 +33,10 @@ function NavigationBar() {
             </ul>
 
             <Link to="/Signup">
-              <span className="navbar-text">
-                <a href="/signin" className="signupBtn">
-                  Sign up
-                </a>
-              </span>
+              <button className="signupBtn">Sign up</button>
             </Link>
             <Link to="/Signin">
-              <span className="navbar-text">
-                <a href="/signin" className="signinBtn">
-                  Sign in
-                </a>
-              </span>
+              <button className="signinBtn">Sign in</button>
             </Link>
           </div>
         </div>
